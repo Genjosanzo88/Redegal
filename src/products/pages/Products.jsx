@@ -23,9 +23,9 @@ export const Products = () => {
                         </div>
                     )}
                      
-                      { response.map(response => 
-                        <Link to="#" className="my-card">
-                          <img src={response.image} className="img img-responsive" alt={response.name}/>
+                      { response.map((response, index) => 
+                        <Link key={index} to="#" className="my-card">
+                          <img src={ response.image ? response.image  : 'src/assets/Noi.jpg'} className="img img-responsive" alt={response.name}/>
                           <div className="profile-name">{response.name}</div>
                           {/* <div className="profile-position">{alter_ego}</div>
                           <div className="profile-overview">
