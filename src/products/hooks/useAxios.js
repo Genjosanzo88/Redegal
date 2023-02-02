@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://hp-api.onrender.com';
+axios.defaults.baseURL = 'https://itunes.apple.com';
 
 export const useAxios = (axiosParams) => {
     const [response, setResponse] = useState(undefined);
