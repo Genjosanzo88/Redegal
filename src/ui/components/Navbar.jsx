@@ -17,9 +17,9 @@ export const Navbar = () => {
 
                     <NavLink 
                         className="nav-item nav-link" 
-                        to="/products"
+                        to="/podcasts"
                     >
-                        Productos
+                        Podcasts
                     </NavLink>
 
                 </div>

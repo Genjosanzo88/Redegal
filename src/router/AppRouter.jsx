@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom"
-import { Products } from "../products"
+import { Podcast } from "../podcasts"
+import { PodcastDetails } from "../podcasts/pages/PodcastDetails"
 import { Navbar } from "../ui/components/Navbar"
 
 
@@ -9,9 +10,10 @@ export const AppRouter = () => {
     <Navbar />
     
     <Routes>
-        <Route path="products" element={<Products />} />
+        <Route path="podcasts" element={<Podcast />} />
+        <Route path="podcasts/:id" element={<PodcastDetails />} />
 
-        <Route path="/" element={<Navigate to="/products" />} />
+        <Route path="/" element={<Navigate to="/podcasts" />} />
     </Routes>
     </>
   )

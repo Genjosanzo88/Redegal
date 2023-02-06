@@ -1,4 +1,19 @@
-.my-card {
+.search-container {
+    margin: 1em 3.5em;
+  }
+  
+.podcast-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.no-results {
+text-align: center;
+margin-top: 1em;
+}
+
+.podcast-card {
     min-width: 300px;
     max-width: 300px;
     height:auto;
@@ -14,7 +29,8 @@
     
 }
  
-.my-card img {
+
+.podcast-card img {
     width: 40%;
     border-radius: 80px;
     filter: brightness(40%);
@@ -22,23 +38,27 @@
     margin: 0 auto;
     }
 
-.my-card img:hover {
+
+.podcast-card img:hover {
     filter: brightness(70%);
 }
  
-.my-card .profile-name {
+
+.podcast-card .profile-name {
     text-transform: uppercase;
     font-weight: bold;
 }
  
-.my-card .profile-position {
+
+.podcast-card .profile-position {
     position: absolute;
     color: rgba(255, 255, 255, 0.596);
     left: 30px;
     top: 60px;
 }
  
-.my-card .profile-overview {
+
+.podcast-card .profile-overview {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -48,18 +68,21 @@
     padding: 50px 0px 40px 0px;
 }
  
-.my-card .profile-overview h3 {
+
+.podcast-card .profile-overview h3 {
     font-weight: bold;
     font-size: large;
     padding-left: 25px;
 }
  
-.my-card .profile-overview p {
+
+.podcast-card .profile-overview p {
     color: rgba(255, 255, 255, 0.7);
     padding-left: 25px;
     padding-right: 25px;
 }
  
-.my-card img:hover {
+
+.podcast-card img:hover {
     transform: scale(1.01);
 }
